@@ -45,3 +45,26 @@ btn{
 ul {
     list-style-type: none;
 }
+
+.float_right {
+    float: right;
+    width: 400px;
+    height: auto;
+}
+
+.float_left {
+    float: left;
+    width:400px;
+    height:auto;
+}
+
+.home_image{
+    width:300px;
+}
+
+.home_image:hover{
+    opacity:0.6;
+}
+.opaq:hover{
+    opacity:0.7;
+}
