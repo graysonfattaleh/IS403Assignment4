@@ -1,0 +1,47 @@
+﻿body {
+}
+
+.ikon{
+    width: 25px;
+}
+
+.submit_body{
+    width: 80vw;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:center;
+    align-content:center;
+}
+
+h1{
+    text-align:center;
+}
+.inner_form{
+    margin-left:auto;
+    margin-right:auto;
+    width: 30vw;
+    min-width:300px;
+
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+btn{
+    background-color: gold;
+}
+
+.error_message {
+    color: red;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}

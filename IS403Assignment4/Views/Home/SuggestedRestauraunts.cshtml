@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Suggested Restauraunts";
+    ViewData["HeaderTitle"] = "Suggested Restauraunts";
+}
+@model IS403Assignment4.Models.PersonalListEntry
+
+
+
+<div class="center submit_body">
+    <div class="inner_form" style="width:50vw;">
+        @foreach (PersonalListEntry ple in TempStorage.Suggestions)
+        {
+        <p><b>@ple.Name Reccomends:</b> @ple.RestaurauntName
+        <b>The Best Dish is:</b> @ple.FavoriteDish <b>The phone number is: </b>@ple.RestaurauntPhone</p>
+        <hr />
+        }
+
+        <form name="submission_form" asp-action="SuggestedRestauraunts" method="post">
+            <label asp-for="Name" class="center-text">
+                Name:
+            </label>
+            <input type="text" asp-for="Name" class="center-text" />
+            <br />
+            <label asp-for="RestaurauntName" class="center-text">
+                Restauraunt Name:
+            </label>
+            <input type="text" asp-for="RestaurauntName" class="center-text" />
+            <br />
+            <label asp-for="RestaurauntPhone" class="center-text">
+                Restauraunt Phone:
+            </label>
+            <input type="text" asp-for="RestaurauntPhone" class="center-text" />
+            <br />
+            <label asp-for="FavoriteDish" class="center-text">
+                Favorite Dish:
+            </label>
+            <input type="text" asp-for="FavoriteDish" class="center-text" />
+            <br /><br />
+            <div class="center" style="width:70px;"><button class="btn btn-primary center-text" type="submit">submit</button></div>
+            <br />
+            <div asp-validation-summary="All" class ="error_message center-text"></div>
+        </form>
+    </div>
+</div>
