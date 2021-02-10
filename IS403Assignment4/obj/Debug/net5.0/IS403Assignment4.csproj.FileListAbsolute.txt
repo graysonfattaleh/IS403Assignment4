@@ -22,7 +22,6 @@
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.TagHelpers.input.cache
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.TagHelpers.output.cache
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.RazorCoreGenerate.cache
-/Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -38,3 +37,4 @@
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.csproj.CopyComplete
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/SuggestedRestauraunts.cshtml.g.cs
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/TopRestauraunts.cshtml.g.cs
+/Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/Home.cshtml.g.cs

@@ -20,7 +20,7 @@ namespace IS403Assignment4.Controllers
 
         public IActionResult Home()
         {
-            return View("Index");
+            return View();
 
         }
         public IActionResult TopRestauraunts()
