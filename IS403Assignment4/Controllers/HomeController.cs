@@ -20,10 +20,22 @@ namespace IS403Assignment4.Controllers
 
         public IActionResult Home()
         {
-            return View();
+            List<string> RestaurauntList = new List<string>();
+
+            foreach (DefaultListEntry d in DefaultListEntry.GetPlaces())
+            {
+                // check for null fav dish
+                string? fav_dish = d.FavoriteDish ?? "It's all Delicous";
+
+                RestaurauntList.Add($" Rank: {d.Rank}) " +
+                    $"Name: {d.RestaurauntName} | Address: {d.Adress} " + Environment.NewLine +
+                    $"| Favorite Dish: {fav_dish} | Phone Number: {d.PhoneNumber}" +
+                    $"| Web Link: {d.WebLink}");
+            };
+            return View(RestaurauntList);
 
         }
-        public IActionResult TopRestauraunts()
+        public IActionResult YourRestauraunts()
         {
             List<string> RestaurauntList = new List<string>();
 
@@ -52,7 +64,7 @@ namespace IS403Assignment4.Controllers
             if (ModelState.IsValid)
             {
                 TempStorage.addListEntry(personalListEntry);
-                return View();
+                return View("YourRestauraunts");
             }
             else
             {

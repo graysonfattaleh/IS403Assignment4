@@ -36,5 +36,5 @@
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.genruntimeconfig.cache
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/IS403Assignment4.csproj.CopyComplete
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/SuggestedRestauraunts.cshtml.g.cs
-/Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/TopRestauraunts.cshtml.g.cs
 /Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/Home.cshtml.g.cs
+/Users/graysonfattaleh/Projects/IS403Assignment4/IS403Assignment4/obj/Debug/net5.0/Razor/Views/Home/YourRestauraunts.cshtml.g.cs

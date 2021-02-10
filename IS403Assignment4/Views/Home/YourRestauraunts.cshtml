@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+
+*@
+@{
+    ViewData["HeaderTitle"] = "Your Restauraunts";
+    ViewData["Title"] = "Your Restauraunts";
+}
+
+<div class="center submit_body">
+    <div class="inner_form" style="width:50vw;">
+        @foreach (PersonalListEntry ple in TempStorage.Suggestions)
+        {
+            <p>
+                <b>@ple.Name Reccomends:</b> @ple.RestaurauntName
+                <b>The Best Dish is:</b> @ple.FavoriteDish <b>The phone number is: </b>@ple.RestaurauntPhone
+            </p>
+            <hr />
+        }
+    </div>
+</div>

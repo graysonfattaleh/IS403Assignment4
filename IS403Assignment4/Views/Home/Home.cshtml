@@ -2,19 +2,31 @@
     ViewData["Title"] = "Home Page";
     ViewData["HeaderTitle"] = "Welcome!";
 }
-
+@model IEnumerable<string>
 <div class="submit_body" style="width: 900px;">
 
-    <h4 class="text-center"> Click on the Steak to see the Top Restauraunts and click on the Grape Leaves to make sugegstions </h4>
-
+    <h4 class="text-center"> Click on the Steak to see the Your Restauraunt List and click on the Grape Leaves to add a restauraunt. </h4>
+    <p class="text-center">Also below you can see the top 5 ranked restauraunts in the area.</p>
     <div>
-        <a asp-action="TopRestauraunts"> <img class="opaq curves home_image" src="~/img/steak.jpg"  style=" width: 400px; float: left;" /></a>
-        
+        <a asp-action="YourRestauraunts"> <img class="opaq curves home_image" src="~/img/steak.jpg" style=" width: 400px; float: left;" /></a>
+
     </div>
 
     <div>
         <a asp-action="SuggestedRestauraunts"><img class="opaq curves" src="~/img/grapeleaf.jpeg" style="width: 350px; float: right;" /></a>
     </div>
-
 </div>
+
+<div style="margin-left:auto; margin-right:auto; margin-top:300px;">
+    <ul style="width:50vw; margin-left:auto; margin-right:auto;">
+        @foreach (string s in Model)
+        {
+            <li>
+                @s
+            </li>
+            <hr />
+        }
+    </ul>
+</div>
+
 

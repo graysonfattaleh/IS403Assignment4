@@ -8,13 +8,6 @@
 
 <div class="center submit_body">
     <div class="inner_form" style="width:50vw;">
-        @foreach (PersonalListEntry ple in TempStorage.Suggestions)
-        {
-        <p><b>@ple.Name Reccomends:</b> @ple.RestaurauntName
-        <b>The Best Dish is:</b> @ple.FavoriteDish <b>The phone number is: </b>@ple.RestaurauntPhone</p>
-        <hr />
-        }
-
         <form name="submission_form" asp-action="SuggestedRestauraunts" method="post">
             <label asp-for="Name" class="center-text">
                 Name:
