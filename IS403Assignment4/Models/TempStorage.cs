@@ -18,6 +18,7 @@ namespace IS403Assignment4.Models
 
         public static void addListEntry(PersonalListEntry ple)
         {
+            //method that adds passed object 
             suggestions.Add(ple);
         }
     }

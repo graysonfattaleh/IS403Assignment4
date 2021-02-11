@@ -37,19 +37,7 @@ namespace IS403Assignment4.Controllers
         }
         public IActionResult YourRestauraunts()
         {
-            List<string> RestaurauntList = new List<string>();
-
-            foreach(DefaultListEntry d in DefaultListEntry.GetPlaces())
-            {
-                // check for null fav dish
-                string? fav_dish = d.FavoriteDish ??  "It's all Delicous" ;
-
-                RestaurauntList.Add($" Rank: {d.Rank}) " +
-                    $"Name: {d.RestaurauntName} | Address: {d.Adress} " + Environment.NewLine +
-                    $"| Favorite Dish: {fav_dish} | Phone Number: {d.PhoneNumber}" +
-                    $"| Web Link: {d.WebLink}");
-            };
-            return View(RestaurauntList);
+            return View();
         }
 
 
@@ -61,8 +49,10 @@ namespace IS403Assignment4.Controllers
         [HttpPost]
         public IActionResult SuggestedRestauraunts(PersonalListEntry personalListEntry)
         {
+            // check to see if model is valid
             if (ModelState.IsValid)
             {
+                // add new restauraunt suggestion
                 TempStorage.addListEntry(personalListEntry);
                 return View("YourRestauraunts");
             }

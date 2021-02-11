@@ -9,7 +9,7 @@ namespace IS403Assignment4.Models
         {
             Rank = rank;
                    }
-
+        // read only
         [Required(ErrorMessage = "You need to enter a rank.")]
         public int Rank { get;}
         [Required(ErrorMessage = "You need to enter a restauraunt name.")]
@@ -19,10 +19,12 @@ namespace IS403Assignment4.Models
         public string Adress { get; set; }
         [DataType(DataType.PhoneNumber, ErrorMessage = "Bad Phone Format")]
         public string PhoneNumber { get; set; }
+        // makes coming soon default web link value, like yeet
         public string? WebLink { get; set; } = "Coming Soon.";
 
         public static DefaultListEntry[] GetPlaces()
         {
+            // list of places
             DefaultListEntry dle1 = new DefaultListEntry(1)
             {
                 RestaurauntName = "Mi Lindo Guadalajara",
